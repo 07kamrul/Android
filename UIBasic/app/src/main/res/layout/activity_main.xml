@@ -4,36 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="100dp"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:hint="Name"
-        android:textColor="@color/design_default_color_primary"
-        android:textStyle="italic|bold" />
 
-    <Button
-        android:id="@+id/btnHello"
+    <RelativeLayout
+        android:id="@+id/moviesRelLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextName"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
-        android:text="Say Hello" />
-
-    <TextView
-        android:id="@+id/txtHello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnHello"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="Hello"
-        android:textSize="20dp" />
-    />
+        android:layout_marginTop="20dp">
+
+        <CheckBox
+            android:id="@+id/checkboxHarry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Herry Potter" />
+
+        <CheckBox
+            android:id="@+id/checkboxMatrix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/checkboxHarry"
+            android:text="The Matrix" />
+
+        <CheckBox
+            android:id="@+id/checkboxJoker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/checkboxMatrix"
+            android:text="Joker" />
+
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rgMaritalStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moviesRelLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMarried"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Married" />
+
+        <RadioButton
+            android:id="@+id/rbSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Single" />
+
+        <RadioButton
+            android:id="@+id/rbInRel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="In a Relationship" />
+
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgMaritalStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginRight="20dp"
+        android:max="100"
+        android:visibility="visible" />
 
 </RelativeLayout>
+
