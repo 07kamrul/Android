@@ -3,9 +3,11 @@ package com.asa.snackbarcardview;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 
@@ -30,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showSnackbar() {
-        Snackbar.make(parent, "This is a Snackbar", Snackbar.LENGTH_INDEFINITE).show();
+        Snackbar.make(parent, "This is a Snackbar", Snackbar.LENGTH_INDEFINITE)
+                .setAction("Retry", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(MainActivity.this, "Retry Clicked", Toast.LENGTH_SHORT).show();
+                    }
+                }).setActionTextColor(Color.RED)
+                .setTextColor(Color.YELLOW)
+                .show();
     }
 }
