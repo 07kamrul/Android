@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Kamrul Hasan/Android/Java/ListViewandSpinner/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Kamrul Hasan/Android/Java/ListViewandSpinner/app/src/main/res/layout-land/activity_main.xml" value="0.2557291666666667" />
+        <entry key="..\:/Kamrul Hasan/Android/Java/ListViewandSpinner/app/src/main/res/layout-night/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Kamrul Hasan/Android/Java/ListViewandSpinner/app/src/main/res/layout-v21/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Kamrul Hasan/Android/Java/ListViewandSpinner/app/src/main/res/layout/activity_main.xml" value="0.1693121693121693" />
+        <entry key="..\:/Kamrul Hasan/Android/Java/ListViewandSpinner/app/src/main/res/layout/trademark.xml" value="0.18181818181818182" />
+        <entry key="..\:/Kamrul Hasan/Android/Java/ListViewandSpinner/app/src/main/res/menu/main_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
