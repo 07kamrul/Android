@@ -9,11 +9,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
     private ConstraintLayout parent;
     private Button btnShowSnackbar;
+    private MaterialCardView cardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,14 @@ public class MainActivity extends AppCompatActivity {
 
         parent = findViewById(R.id.parent);
         btnShowSnackbar = findViewById(R.id.button);
+
+        cardView = findViewById(R.id.cardView);
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "CardView Clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         btnShowSnackbar.setOnClickListener(new View.OnClickListener() {
             @Override
